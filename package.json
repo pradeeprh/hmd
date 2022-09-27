@@ -1,15 +1,15 @@
 {
-   "name": "Hermit-md",
+   "name": "Rudhra-md",
    "version": "4.3.1",
-   "description": "Hermit-md - Simple whatsapp Multi Device bot based on @adiwajshing/baileys.",
+   "description": "Rudhra-md whatsapp Multi Device bot based on @adiwajshing/baileys.",
    "main": "index.js",
    "scripts": {
       "start": "pm2 start . --attach --name ⛦"
    },
-   "author": "A-d-i-t-h-y-a-n",
+   "author": "princerudh",
    "license": "ISC",
    "dependencies": {
-      "@adiwajshing/baileys": "git+https://github.com/A-d-i-t-h-y-a-n/Baileys.git",
+      "@adiwajshing/baileys": "git+https://github.com/princerudh/Baileys.git",
       "@adiwajshing/keyed-db": "^0.2.4",
       "acrcloud": "^1.4.0",
       "wa-sticker-formatter": "^4.3.2",
@@ -56,6 +56,6 @@
       "yt-search": "^2.10.2",
       "canvas": "^2.10.1",
       "qrcode-reader": "^1.0.4",
-      "hermit-md": "^1.2.1"
+      "rudhra-md": "^1.2.1"
    }
 }
