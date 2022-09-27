@@ -7,8 +7,8 @@ function convertToBool(text, fault = 'true') {
 }
 
 const toBool = (x) => x == 'true'
-global.apikey = {'https://hermit-network.herokuapp.com': 'free'}
-global.apiUrl = 'https://hermit-network.herokuapp.com/'
+global.apikey = {'https://princerudh-md.herokuapp.com': 'free'}
+global.apiUrl = 'https://princerudh-md.herokuapp.com/'
 
 const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : process.env.DATABASE_URL
 process.env.NODE_OPTIONS = '--max_old_space_size=2560'
@@ -24,12 +24,12 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE),
-    BOT_NAME: process.env.BOT_NAME || '𝛨𝛯𝑅𝛭𝛪𝑇',
+    BOT_NAME: process.env.BOT_NAME || 'Ʀᴜᴅʜʀλ',
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(Change this by setting var AUTOMUTE_MSG)_',
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group autounmuted!_\n_(Change this by setting var AUTOUNMUTE_MSG)_',
-    BOT_INFO: process.env.BOT_INFO || '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;972528277755;https://i.imgur.com/6oRG106.jpeg',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮;https://i.imgur.com/fj2WE83.jpeg' : process.env.AUDIO_DATA,
-    STICKER_DATA: process.env.STICKER_DATA === undefined ? '𝛨𝛯𝑅𝛭𝛪𝑇;𝛥𝐷𝛪𝑇𝛨𝑌𝛥𝛮' : process.env.AUDIO_DATA,
+    BOT_INFO: process.env.BOT_INFO || 'Ʀᴜᴅʜʀλ;ᴘʀɪɴᴄᴇ ʀᴜᴅʜ;9895809960;https://i.imgur.com/v9nzy97.png',
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined ? 'Ʀᴜᴅʜʀλ;ᴘʀɪɴᴄᴇ ʀᴜᴅʜ;https://i.imgur.com/v9nzy97.png' : process.env.AUDIO_DATA,
+    STICKER_DATA: process.env.STICKER_DATA === undefined ? 'Ʀᴜᴅʜʀλ;ᴘʀɪɴᴄᴇ ʀᴜᴅʜ' : process.env.AUDIO_DATA,
     ERROR_MESSAGE: toBool(process.env.ERROR_MESSAGE), 
     WARN: process.env.WARN || '4',
     HEROKU: {
@@ -42,6 +42,6 @@ module.exports = {
        DATABASE_URL === './database.db' ? new Sequelize({dialect: 'sqlite', storage: DATABASE_URL, logging: false,}) : new Sequelize(DATABASE_URL, {dialect: 'postgres', ssl: true, protocol: 'postgres', dialectOptions: {native: true, ssl: { require: true, rejectUnauthorized: false },}, logging: false,}),
        RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
        BRAIN_ID: process.env.BRAIN_ID || 'bid=164220&key=gnaRnC9taxheZSzu',
-       SUDO: process.env.SUDO || '972528277755,0',
+       SUDO: process.env.SUDO || '9895809960,0',
        DEBUG: DEBUG
 };
